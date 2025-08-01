@@ -1,0 +1,8 @@
+{
+    "name": "Ahmet Yılmaz",
+    "email": "ahmet@example.com", 
+    "phone": "05551234567",
+    "workplaceType": "remote",
+    "employmentType": ["full_time", "part_time"],
+    "jobLocation": "istanbul"
+}

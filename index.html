@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+            <script src="assets/js/jquery.validate.js"></script>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet/less" type="text/css" href="assets/css/style.less" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+
+    <script src="assets/js/script.js"></script>
+
+</head>
+
+<body>
+    <div style="display: none">
+        <!-- IcoMoon'dan aldığınız symbol-defs.svg dosyasının içeriğini buraya yapıştırın -->
+        <svg class="icon icon-checkmark">
+            <use xlink:href="#icon-checkmark"></use>
+            ">
+            <symbol id="icon-checkmark" viewBox="0 0 32 32">
+                <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
+            </symbol>
+            <!-- Diğer iconlarınız buraya -->
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="row col-12 col-lg-4 col-md-6">
+            <h1>To Do List</h1>
+            <div class="input-group mb-3">
+                <input type="text" id="taskInput" placeholder="Add a new task" />
+                <button id="addTaskButton">Add Task</button>
+            </div>
+
+            <ul id="taskList" class="list-unstyled">
+                <!-- Tasks will be added here dynamically -->
+                <li class="task-item">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="checkmark">
+                            <svg class="icon-checkmark">
+                                <use xlink:href="#icon-checkmark"></use>
+                            </svg>
+                        </span>
+                        <span class="task-text">Örnek görev</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" style="margin: 50px"></div>
+
+    <div class="container" style="background-color: #fbfbfb">
+        <form class="form" id="jobApplicationForm">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="form_title_company">
+                        <span>delivery job application form.</span>
+                        <span>©opyright delivery—app 2022.</span>
+                    </div>
+                    <div class="border my-3"></div>
+
+                </div>
+            </div>
+
+            <!-- Form name/email/phone -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="form_name">
+                        <label for="name">Full Name *</label>
+                        <input type="text" name="name" id="name" value="" placeholder="Enter your full name" />
+                        <div id="name-error" class="error-message" style="display:none;"></div>
+                    </div>
+                    <div class="form_email">
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" value="" placeholder="Enter your email" />
+                        <div id="email-error" class="error-message" style="display:none;"></div>
+                    </div>
+                    <div class="form_phone">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" name="phone"   id="phone" value="" placeholder="Enter your phone number" />
+                        <div id="phone-error" class="error-message" style="display:none;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workplace & Employment -->
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="form_workplace_type">
+                        <label for="workplaceType">Workplace type *</label>
+                        <select id="workplaceType" class="form-select" name="workplaceType">
+                            <option value="">Choose workplace type</option>
+                            <option value="remote">Remote</option>
+                            <option value="on_site">On-site</option>
+                            <option value="hybrid">Hybrid</option>
+                        </select>
+                    </div>
+
+                    <div class="form_employment_type mt-3">
+                        <label for="employmentType">Employment type *</label>
+                        <select id="employmentType" class="form-select" name="employmentType" multiple>
+                            <option value="full_time">Full-time</option>
+                            <option value="part_time">Part-time</option>
+                            <option value="freelance">Freelance</option>
+                            <option value="contract">Contract</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form_job_location">
+                        <label for="jobLocation">Job Location *</label>
+                        <select id="jobLocation" class="form-select" name="jobLocation">
+                            <option value="">Choose location</option>
+                            <option value="istanbul">Istanbul</option>
+                            <option value="ankara">Ankara</option>
+                            <option value="izmir">Izmir</option>
+                            <option value="remote">Remote</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit and Terms -->
+            <div class="row mt-4 align-items-start">
+                <div class="col-md-3">
+                    <div class="form_submit" label>
+                        <button name="submit" type="submit" class="submit_Btn" value="submit"><label for="submitBtn" class="submit_Btn_Label">Send application</label></button>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <div class="form_terms">
+                        <label>
+                            By clicking Send application, you agree to our User Agreement, Privacy Policy, and Cookie
+                            Policy.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                 <input type="checkbox" id="termsCheckbox" />
+                 <label for="termsCheckbox" class="form_check_input">I agree to the terms and conditions</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
