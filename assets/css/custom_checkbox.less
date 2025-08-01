@@ -1,0 +1,59 @@
+@import "variable.less";
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 20px 0;
+
+  .checkbox-input {
+    display: none; // Varsayılan checkbox'ı gizle
+  }
+
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid @global_color;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0; // Checkbox'ın boyutunu sabit tut
+
+    .icon-checkmark {
+      width: 14px;
+      height: 14px;
+      fill: #fff;
+      opacity: 0; // Başlangıçta gizli
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  // Checkbox işaretlendiğinde
+  .checkbox-input:checked + .checkmark {
+    background-color: @global_color;
+    border-color: @global_color;
+
+    .icon-checkmark {
+      opacity: 1; // SVG'yi göster
+    }
+  }
+
+  // Label stilleri
+  .form_check_input {
+    .global_font();
+    margin: 0; // Default margin'i kaldır
+    cursor: pointer;
+    @media @mobile {
+      font-size: 9px;
+    }
+  }
+}
+
+.border {
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+}

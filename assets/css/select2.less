@@ -1,0 +1,59 @@
+@import "variable.less";
+
+
+// Select2 özelleştirme
+.select2-container {
+  width: 100% !important;
+
+  .select2-selection {
+    border: 1px solid @global_color !important;
+    border-radius: 25px !important;
+    padding: 5px 10px !important;
+    height: auto !important;
+    min-height: 40px !important;
+  }
+
+  .select2-selection__rendered {
+    color: @global_color !important;
+    font-size: 14px !important;
+    line-height: 30px !important;
+  }
+
+  .select2-selection__placeholder {
+    color: #999 !important;
+  }
+}
+
+.select2-dropdown {
+  border: 1px solid @global_color !important;
+  border-radius: 10px !important;
+  color: @global_color !important;
+}
+
+// Form select alanları için
+.form_workplace_type,
+.form_employment_type,
+.form_job_location {
+  .global_font();
+  margin-bottom: 20px;
+
+  select {
+    width: 100%;
+  }
+}
+
+.select2-search .select2-search--inline {
+  font-size: 14px !important;
+  color: @global_color !important;
+}
+
+.select2-selection__arrow {
+  top: 50% !important;
+  left: 96% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.select2-search__field {
+  font-size: 14px !important;
+  color: #999 !important;
+}

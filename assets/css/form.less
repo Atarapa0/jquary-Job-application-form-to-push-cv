@@ -1,0 +1,84 @@
+@import "variable.less";
+.form {
+  &_title_company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    span {
+      color: @global_font_color;
+      font-size: 16px;
+      gap: 5px;
+      font-family: @primary-font;
+      @media @mobile {
+        font-size: 9px;
+      }
+    }
+  }
+  &_name,
+  &_email,
+  &_phone,
+   &_workplace_type,
+  &_employment_type,
+  &_job_location {
+    .global_font();
+    .global_input();
+  }
+  &_workplace_type,
+  &_employment_type,
+  &_job_location {
+    .global_font();
+  }
+  &_submit_Btn {
+      color: @global_color;
+      border: @global_color 1px solid;
+      border-radius: 25px;
+      padding: 20px 42px;
+      @media @mobile {
+        padding: 10px 21px;
+      }
+      &_Label {
+        font-size: 16px;
+        @media @mobile {
+          font-size: 12px;
+        }
+      }
+    }
+  
+  &_terms {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .global_font();
+    label {
+      @media @mobile {
+        margin-top: 20px;
+      }
+    }
+  }
+  &_check_input {
+    .global_font();
+    margin: 20px 0px;
+    @media @mobile {
+      font-size: 9px;
+    }
+  }
+}
+input.error {
+  border: 1px solid red !important;
+  background-color: #f8d7da !important;
+  color: red !important;
+}
+//----- Error Messages
+
+#name-error,
+#email-error,
+#phone-error,
+#workplaceType-error,
+#employmentType-error,
+#jobLocation-error {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
