@@ -8,46 +8,52 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
-}
+  margin: 20px 0;
+  
+  .checkbox-input {
+    display: none; // Varsayılan checkbox'ı gizle
+  }
 
-.checkbox-input {
-  display: none; // Varsayılan checkbox'ı gizle
-}
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8b54ff;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0; // Checkbox'ın boyutunu sabit tut
+    
+    .icon-checkmark {
+      width: 14px;
+      height: 14px;
+      fill: #fff;
+      opacity: 0; // Başlangıçta gizli
+      transition: opacity 0.3s ease;
+    }
+  }
 
-.checkmark {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
+  // Checkbox işaretlendiğinde
+  .checkbox-input:checked + .checkmark {
+    background-color: #8b54ff;
+    border-color: #8b54ff;
+    
+    .icon-checkmark {
+      opacity: 1; // SVG'yi göster
+    }
+  }
 
-.icon-checkmark {
-  width: 14px;
-  height: 14px;
-  fill: #fff;
-  opacity: 0; // Başlangıçta gizli
-  transition: opacity 0.3s ease;
-}
-
-// Checkbox işaretlendiğinde
-.checkbox-input:checked + .checkmark {
-  background-color: #3b66db;
-  border-color: #3b66db;
-}
-
-.checkbox-input:checked + .checkmark .icon-checkmark {
-  opacity: 1; // SVG'yi göster
-}
-
-// Görev tamamlandığında text'i çiz
-.checkbox-input:checked ~ .task-text {
-  text-decoration: line-through;
-  opacity: 0.6;
+  // Label stilleri
+  .form_check_input {
+    .global_font();
+    margin: 0; // Default margin'i kaldır
+    cursor: pointer;
+    @media @mobile {
+      font-size: 9px;
+    }
+  }
 }
 
 .global_font {
