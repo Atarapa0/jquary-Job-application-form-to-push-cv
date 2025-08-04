@@ -903,29 +903,21 @@
   border-radius: 10px !important;
   color: #3b66db !important;
 }
-.form_workplace_type,
-.form_employment_type,
-.form_job_location {
+.form_skils {
   margin-bottom: 20px;
 }
-.form_workplace_type label,
-.form_employment_type label,
-.form_job_location label {
+.form_skils label {
   color: #565656;
   font-size: 16px;
   gap: 10px;
   font-family: "Inter";
 }
 @media only screen and (max-width: 767px) {
-  .form_workplace_type label,
-  .form_employment_type label,
-  .form_job_location label {
+  .form_skils label {
     font-size: 9px;
   }
 }
-.form_workplace_type select,
-.form_employment_type select,
-.form_job_location select {
+.form_skils select {
   width: 100%;
 }
 .select2-search .select2-search--inline {

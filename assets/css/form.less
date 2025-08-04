@@ -1,4 +1,8 @@
 @import "variable.less";
+form{
+      padding: 55px;;
+
+}
 .form {
   &_title_company {
     display: flex;
@@ -18,17 +22,19 @@
   &_name,
   &_email,
   &_phone,
-   &_workplace_type,
-  &_employment_type,
-  &_job_location {
+  &_website,
+  &_education,
+  &_qualifications,
+  &_workExperience,
+  &_workDescription{
     .global_font();
     .global_input();
   }
-  &_workplace_type,
-  &_employment_type,
-  &_job_location {
+  &_work_experience {
     .global_font();
+    .global_input();
   }
+
   &_submit_Btn {
       color: @global_color;
       border: @global_color 1px solid;
@@ -41,6 +47,25 @@
         font-size: 16px;
         @media @mobile {
           font-size: 12px;
+        }
+      }
+    }
+      #add_description,
+      #add-experience,
+      #add-education,
+      #add-qualification {
+      color: @global_color;
+      border: @global_color 1px solid;
+      border-radius: 25px;
+      padding: 10px 20px;
+      margin: 20px auto;
+      @media @mobile {
+        padding: 10px 21px;
+      }
+      &_Label {
+        font-size: 12px;
+        @media @mobile {
+          font-size: 9px;
         }
       }
     }
@@ -74,9 +99,19 @@ input.error {
 #name-error,
 #email-error,
 #phone-error,
-#workplaceType-error,
-#employmentType-error,
-#jobLocation-error {
+#website-error,
+#workCompany-error,
+#workTask-error,
+#workDuration-error,
+#workDescription-error,
+#educationName-error,
+#educationLevel-error,
+#educationDate-error,
+#qualificationsName-error,
+#qualificationsCompany-error,
+#qualificationsDate-error,
+#skills-error
+ {
   color: red;
   font-size: 16px;
   margin-bottom: 10px;
