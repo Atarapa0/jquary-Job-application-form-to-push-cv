@@ -1016,10 +1016,10 @@ form {
     font-size: 12px;
   }
 }
-.form #add_description,
-.form #add-experience,
+.form #add-workDescription,
+.form #add-workExperience,
 .form #add-education,
-.form #add-qualification {
+.form #add-qualifications {
   color: #3b66db;
   border: #3b66db 1px solid;
   border-radius: 25px;
@@ -1027,24 +1027,24 @@ form {
   margin: 20px auto;
 }
 @media only screen and (max-width: 767px) {
-  .form #add_description,
-  .form #add-experience,
+  .form #add-workDescription,
+  .form #add-workExperience,
   .form #add-education,
-  .form #add-qualification {
+  .form #add-qualifications {
     padding: 10px 21px;
   }
 }
-.form #add_description_Label,
-.form #add-experience_Label,
+.form #add-workDescription_Label,
+.form #add-workExperience_Label,
 .form #add-education_Label,
-.form #add-qualification_Label {
+.form #add-qualifications_Label {
   font-size: 12px;
 }
 @media only screen and (max-width: 767px) {
-  .form #add_description_Label,
-  .form #add-experience_Label,
+  .form #add-workDescription_Label,
+  .form #add-workExperience_Label,
   .form #add-education_Label,
-  .form #add-qualification_Label {
+  .form #add-qualifications_Label {
     font-size: 9px;
   }
 }
