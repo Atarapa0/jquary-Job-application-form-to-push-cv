@@ -903,21 +903,25 @@
   border-radius: 10px !important;
   color: #3b66db !important;
 }
-.form_skils {
+.form_skils,
+.form_tools {
   margin-bottom: 20px;
 }
-.form_skils label {
+.form_skils label,
+.form_tools label {
   color: #565656;
   font-size: 16px;
   gap: 10px;
   font-family: "Inter";
 }
 @media only screen and (max-width: 767px) {
-  .form_skils label {
+  .form_skils label,
+  .form_tools label {
     font-size: 9px;
   }
 }
-.form_skils select {
+.form_skils select,
+.form_tools select {
   width: 100%;
 }
 .select2-search .select2-search--inline {

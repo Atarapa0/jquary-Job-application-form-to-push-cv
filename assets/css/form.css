@@ -901,6 +901,7 @@ form {
   }
 }
 .form_name label,
+.form_description label,
 .form_email label,
 .form_phone label,
 .form_website label,
@@ -915,6 +916,7 @@ form {
 }
 @media only screen and (max-width: 767px) {
   .form_name label,
+  .form_description label,
   .form_email label,
   .form_phone label,
   .form_website label,
@@ -926,6 +928,7 @@ form {
   }
 }
 .form_name input,
+.form_description input,
 .form_email input,
 .form_phone input,
 .form_website input,
@@ -942,6 +945,7 @@ form {
   margin-bottom: 20px;
 }
 .form_name input label,
+.form_description input label,
 .form_email input label,
 .form_phone input label,
 .form_website input label,
@@ -956,6 +960,7 @@ form {
 }
 @media only screen and (max-width: 767px) {
   .form_name input label,
+  .form_description input label,
   .form_email input label,
   .form_phone input label,
   .form_website input label,

@@ -1,7 +1,10 @@
-
 $(document).ready(function () {
   $('#skills').select2({
     placeholder: "Select skills",
+    allowClear: true
+  });
+  $('#tools').select2({
+    placeholder: "Select tools",
     allowClear: true
   });
 });
@@ -63,7 +66,7 @@ $(document).ready(function () {
       },
     },
     errorPlacement: function (error, element) {
-      if (element.attr("name") === "workExperience[]") {
+      if (element.attr("name") === "skills" || element.attr("name") === "tools") {
         error.insertAfter(element.next(".select2-container"));
       } else {
         error.insertAfter(element);
@@ -83,16 +86,26 @@ $(document).ready(function () {
   function collectFormData() {
     return {
       name: $("#name").val().toString(),
+      description: $("#description").val().toString(),
       email: $("#email").val().toString(),
       phone: $("#phone").val(),
-      workplaceType: $("#workplaceType").val().toString(),
-      employmentType: $("#employmentType").val().toString(),
-      jobLocation: $("#jobLocation").val().toString(),
+      website: $("#website").val().toString(),
+      workCompany: $("#workCompany").val().toString(),
+      workTask: $("#workTask").val().toString(),
+      workDuration: $("#workDuration").val().toString(),
+      workDescription: $("#workDescription").val().toString(),
+      educationName: $("#educationName").val().toString(),
+      educationLevel: $("#educationLevel").val().toString(),
+      educationDate: $("#educationDate").val().toString(),
+      qualificationsName: $("#qualificationsName").val().toString(),
+      qualificationsCompany: $("#qualificationsCompany").val().toString(),
+      qualificationsDate: $("#qualificationsDate").val().toString(),
+      skills: $("#skills").val() ? $("#skills").val().toString() : "",
+      tools: $("#tools").val() ? $("#tools").val().toString() : "",
       termsCheckbox: $("#termsCheckbox").is(":checked"),
       timestamp: new Date().toISOString()
     };
   }
-
   // POST isteği simülasyonu
   function submitData(data) {
     $.ajax({
@@ -123,11 +136,20 @@ $(document).ready(function () {
   $(".checkmark").click(function () {
     $("#termsCheckbox").trigger("click")
 })
+
+
+
 });
 
+
+// jQuery Validation için Türkçe mesajlar
 $(function(){
   $.extend($.validator.messages, {
             required: "Bu alanın doldurulması zorunludur.",
             email: "Lütfen geçerli bir e-posta adresi giriniz.",
+            url: "Lütfen geçerli bir URL giriniz.",
+            digits: "Lütfen sadece rakam giriniz.",
+            minlength: $.validator.format("Lütfen en az {0} karakter giriniz."),
+            maxlength: $.validator.format("Lütfen en fazla {0} karakter giriniz."),
         });
 })
