@@ -61,10 +61,17 @@
                         <label for="name">Full Name *</label>
                         <input type="text" name="name" id="name" value="" placeholder="Enter your full name" />
                         <div id="error-name" class="error-message" style="display:none;"></div>
+                    </div> 
+
+                    <div class="form_title">
+                        <label for="title">Title *</label>
+                        <input type="text" name="title" id="title" value="" placeholder="Enter your title" />
+                        <div id="error-title" class="error-message" style="display:none;"></div>
                     </div>
                     <div class="form_description">
                         <label for="description">Description *</label>
-                        <input type="text" name="description" id="description" value="" placeholder="Enter your description" />
+                        <input type="text" name="description" id="description" value=""
+                            placeholder="Enter your description" />
                         <div id="error-description" class="error-message" style="display:none;"></div>
                     </div>
                     <div class="form_email">
@@ -90,7 +97,8 @@
                         <label for="workExperience">Work Experience *</label>
                         <div class="form_work_experience_company">
                             <label for="workCompany">Company Name *</label>
-                            <input type="text" name="workCompany" id="workCompany" placeholder="Enter your work company" />
+                            <input type="text" name="workCompany" id="workCompany"
+                                placeholder="Enter your work company" />
                             <div id="error-workCompany" class="error-message" style="display:none;"></div>
                         </div>
                         <div class="form_work_experience_task">
@@ -100,107 +108,117 @@
                         </div>
                         <div class="form_work_experience_duration">
                             <label for="workDuration">Duration *</label>
-                            <input type="text" name="workDuration" id="workDuration" placeholder="Enter your work duration" />
+                            <input type="text" name="workDuration" id="workDuration"
+                                placeholder="Enter your work duration" />
                             <div id="error-workDuration" class="error-message" style="display:none;"></div>
                         </div>
                         <div class="form_work_experience_description">
-                            <label for="workDescription">Description *</label>
-                            <input type="text" name="workDescription" id="workDescription" placeholder="Enter your work description" />
+                            <label for="workDescription">Description 1 *</label>
+                            <input type="text" name="workDescription[]" placeholder="Enter your work description" />
                             <div id="error-workDescription" class="error-message" style="display:none;"></div>
                         </div>
+                        <div id="work_description_list"></div>
                         <button type="button" id="add-workDescription">Add Description</button>
                         <button type="button" id="add-workExperience">Work Experience Add</button>
                         <div id="error-workExperience" class="error-message" style="display:none;"></div>
+                        <div class="work_experience_list"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form_education">
-                            <label for="education">Education *</label>
-                            <div class="form_education_name">
-                                <label for="educationName">Education Name *</label>
-                                <input type="text" name="educationName" id="educationName" placeholder="Enter your education name" />
-                                <div id="error-educationName" class="error-message" style="display:none;"></div>
-                            </div>
-                            <div class="form_education_level">
-                                <label for="educationLevel">Education Level *</label>
-                                <input type="text" name="educationLevel" id="educationLevel" placeholder="Enter your education level" />
-                                <div id="error-educationLevel" class="error-message" style="display:none;"></div>
-                            </div>
-                            <div class="form_education_date">
-                                <label for="educationDate">Education Date *</label>
-                                <input type="date" name="educationDate" id="educationDate" placeholder="Enter your education date" />
-                                <div id="error-educationDate" class="error-message" style="display:none;"></div>
-                            </div>
-                            <button type="button" id="add-education">Add Education</button>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form_education">
+                        <label for="education">Education *</label>
+                        <div class="form_education_name">
+                            <label for="educationName">Education Name *</label>
+                            <input type="text" name="educationName" id="educationName"
+                                placeholder="Enter your education name" />
+                            <div id="error-educationName" class="error-message" style="display:none;"></div>
                         </div>
+                        <div class="form_education_level">
+                            <label for="educationLevel">Education Level *</label>
+                            <input type="text" name="educationLevel" id="educationLevel"
+                                placeholder="Enter your education level" />
+                            <div id="error-educationLevel" class="error-message" style="display:none;"></div>
+                        </div>
+                        <div class="form_education_date">
+                            <label for="educationDate">Education Date *</label>
+                            <input type="text" name="educationDate" id="educationDate"
+                                placeholder="Enter your education date" />
+                            <div id="error-educationDate" class="error-message" style="display:none;"></div>
+                        </div>
+                        <button type="button" id="add-education">Add Education</button>
+                        <div class="education_list"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form_qualifications">
-                                <label for="qualifications">Qualifications *</label>
-                                <div class="form_qualifications_name">
-                                    <label for="qualificationsName">Qualification Name *</label>
-                                    <input type="text" name="qualificationsName" id="qualificationsName"
-                                        placeholder="Enter your qualification name" />
-                                    <div id="error-qualificationsName" class="error-message" style="display:none;">
-                                    </div>
-                                </div>
-                                <div class="form_qualifications_Company">
-                                    <label for="qualificationsCompany">Qualification Company *</label>
-                                    <input type="text" name="qualificationsCompany" id="qualificationsCompany"
-                                        placeholder="Enter your qualification company" />
-                                    <div id="error-qualificationsCompany" class="error-message" style="display:none;">
-                                    </div>
-                                </div>
-                                <div class="form_qualifications_date">
-                                    <label for="qualificationsDate">Qualification Date *</label>
-                                    <input type="text" name="qualificationsDate" id="qualificationsDate"
-                                        placeholder="Enter your qualification date" />
-                                    <div id="error-qualificationsDate" class="error-message" style="display:none;">
-                                    </div>
-                                </div>
-                                <button type="button" id="add-qualifications">Add Qualifications</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form_qualifications">
+                        <label for="qualifications">Qualifications *</label>
+                        <div class="form_qualifications_name">
+                            <label for="qualificationsName">Qualification Name *</label>
+                            <input type="text" name="qualificationsName" id="qualificationsName"
+                                placeholder="Enter your qualification name" />
+                            <div id="error-qualificationsName" class="error-message" style="display:none;">
                             </div>
                         </div>
+                        <div class="form_qualifications_Company">
+                            <label for="qualificationsCompany">Qualification Company *</label>
+                            <input type="text" name="qualificationsCompany" id="qualificationsCompany"
+                                placeholder="Enter your qualification company" />
+                            <div id="error-qualificationsCompany" class="error-message" style="display:none;">
+                            </div>
+                        </div>
+                        <div class="form_qualifications_date">
+                            <label for="qualificationsDate">Qualification Date *</label>
+                            <input type="text" name="qualificationsDate" id="qualificationsDate"
+                                placeholder="Enter your qualification date" />
+                            <div id="error-qualificationsDate" class="error-message" style="display:none;">
+                            </div>
+                        </div>
+                        <button type="button" id="add-qualifications">Add Qualifications</button>
+                        <div class="qualifications_list"></div>
+                    </div>
+                </div>
 
-                    </div>
+            </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form_skills">
-                                <label for="skills">Skills *</label>
-                                <select id="skills" class="form-select" name="skills" multiple>
-                                    <option value="javascript">JavaScript</option>
-                                    <option value="python">Python</option>
-                                    <option value="java">Java</option>
-                                    <option value="csharp">C#</option>
-                                    <option value="php">PHP</option>
-                                    <option value="ruby">Ruby</option>
-                                    <option value="flutter">Flutter</option>
-                                </select>
-                                <div id="error-skills" class="error-message" style="display:none;"></div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form_skills">
+                        <label for="skills">Skills *</label>
+                        <select id="skills" class="form-select" name="skills" multiple>
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="csharp">C#</option>
+                            <option value="php">PHP</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="flutter">Flutter</option>
+                        </select>
+                        <div id="error-skills" class="error-message" style="display:none;"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form_tools">
-                                <label for="tools">Tools *</label>
-                                <select id="tools" class="form-select" name="tools" multiple>
-                                    <option value="git">Git</option>
-                                    <option value="docker">Docker</option>
-                                    <option value="kubernetes">Kubernetes</option>
-                                    <option value="aws">AWS</option>
-                                    <option value="azure">Azure</option>
-                                    <option value="gcp">GCP</option>
-                                </select>
-                                <div id="error-tools" class="error-message" style="display:none;"></div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form_tools">
+                        <label for="tools">Tools *</label>
+                        <select id="tools" class="form-select" name="tools" multiple>
+                            <option value="git">Git</option>
+                            <option value="docker">Docker</option>
+                            <option value="kubernetes">Kubernetes</option>
+                            <option value="aws">AWS</option>
+                            <option value="azure">Azure</option>
+                            <option value="gcp">GCP</option>
+                        </select>
+                        <div id="error-tools" class="error-message" style="display:none;"></div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Workplace & Employment 
+            <!-- Workplace & Employment 
             <div class="row mt-3">
                 <div class="col-md-6">
                     <div class="form_workplace_type">
@@ -238,38 +256,37 @@
                 </div>
             </div>-->
 
-                    <div class="col-12">
-                        <div class="custom-checkbox">
-                            <input type="checkbox" id="termsCheckbox" name="termsCheckbox" class="checkbox-input" />
-                            <span class="checkmark">
-                                <svg class="icon-checkmark">
-                                    <use xlink:href="#icon-checkmark"></use>
-                                </svg>
-                            </span>
-                            <label for="termsCheckbox" class="form_check_input">I agree to the terms and
-                                conditions</label>
-                        </div>
-                    </div>
+            <div class="col-12">
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="termsCheckbox" name="termsCheckbox" class="checkbox-input" />
+                    <span class="checkmark">
+                        <svg class="icon-checkmark">
+                            <use xlink:href="#icon-checkmark"></use>
+                        </svg>
+                    </span>
+                    <label for="termsCheckbox" class="form_check_input">I agree to the terms and
+                        conditions</label>
+                </div>
+            </div>
 
-                    <!-- Submit and Terms -->
-                    <div class="row mt-4 align-items-start">
-                        <div class="col-md-3">
-                            <button name="submit" type="submit" class="form_submit_Btn" value="submit"><label
-                                    for="submitBtn" class="form_submit_Btn_Label">Send application</label></button>
-                        </div>
-                        <div class="col-md-8 offset-md-1">
-                            <div class="form_terms">
-                                <label>
-                                    By clicking Send application, you agree to our User Agreement, Privacy Policy, and
-                                    Cookie
-                                    Policy.
-                                </label>
-                            </div>
-                        </div>
+            <!-- Submit and Terms -->
+            <div class="row mt-4 align-items-start">
+                <div class="col-md-3">
+                    <button name="submit" type="submit" class="form_submit_Btn" value="submit"><label for="submitBtn"
+                            class="form_submit_Btn_Label">Send application</label></button>
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <div class="form_terms">
+                        <label>
+                            By clicking Send application, you agree to our User Agreement, Privacy Policy, and
+                            Cookie
+                            Policy.
+                        </label>
                     </div>
+                </div>
+            </div>
         </form>
     </div>
-
 </body>
 
 </html>

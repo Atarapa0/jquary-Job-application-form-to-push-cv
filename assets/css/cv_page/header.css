@@ -880,240 +880,42 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
 }
-form {
-  padding: 55px;
-}
-.form_title_company {
+header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+  justify-content: space-evenly;
+  padding: 30px 40px !important;
+  background-color: #3C726E;
+  border-bottom: 1px solid #dee2e6;
+  color: #FFFFFF;
 }
-.form_title_company span {
-  color: #565656;
-  font-size: 16px;
-  gap: 5px;
-  font-family: "Inter";
+header .header-left {
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
-@media only screen and (max-width: 767px) {
-  .form_title_company span {
-    font-size: 9px;
-  }
+header .header-left #cv_name {
+  font-size: 24px;
+  font-weight: bold;
 }
-.form_name label,
-.form_description label,
-.form_email label,
-.form_phone label,
-.form_website label,
-.form_education label,
-.form_qualifications label,
-.form_workExperience label,
-.form_workDescription label {
-  color: #565656;
-  font-size: 16px;
-  gap: 10px;
-  font-family: "Inter";
-}
-@media only screen and (max-width: 767px) {
-  .form_name label,
-  .form_description label,
-  .form_email label,
-  .form_phone label,
-  .form_website label,
-  .form_education label,
-  .form_qualifications label,
-  .form_workExperience label,
-  .form_workDescription label {
-    font-size: 9px;
-  }
-}
-.form_name input,
-.form_description input,
-.form_email input,
-.form_phone input,
-.form_website input,
-.form_education input,
-.form_qualifications input,
-.form_workExperience input,
-.form_workDescription input {
-  width: 100%;
-  padding: 10px 23px;
-  border: 1px solid #3b66db;
-  border-radius: 25px;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-.form_name input label,
-.form_description input label,
-.form_email input label,
-.form_phone input label,
-.form_website input label,
-.form_education input label,
-.form_qualifications input label,
-.form_workExperience input label,
-.form_workDescription input label {
-  color: #565656;
-  font-size: 16px;
-  gap: 10px;
-  font-family: "Inter";
-}
-@media only screen and (max-width: 767px) {
-  .form_name input label,
-  .form_description input label,
-  .form_email input label,
-  .form_phone input label,
-  .form_website input label,
-  .form_education input label,
-  .form_qualifications input label,
-  .form_workExperience input label,
-  .form_workDescription input label {
-    font-size: 9px;
-  }
-}
-.form_work_experience label {
-  color: #565656;
-  font-size: 16px;
-  gap: 10px;
-  font-family: "Inter";
-}
-@media only screen and (max-width: 767px) {
-  .form_work_experience label {
-    font-size: 9px;
-  }
-}
-.form_work_experience input {
-  width: 100%;
-  padding: 10px 23px;
-  border: 1px solid #3b66db;
-  border-radius: 25px;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-.form_work_experience input label {
-  color: #565656;
-  font-size: 16px;
-  gap: 10px;
-  font-family: "Inter";
-}
-@media only screen and (max-width: 767px) {
-  .form_work_experience input label {
-    font-size: 9px;
-  }
-}
-.form_submit_Btn {
-  color: #3b66db;
-  border: #3b66db 1px solid;
-  border-radius: 25px;
-  padding: 20px 42px;
-}
-@media only screen and (max-width: 767px) {
-  .form_submit_Btn {
-    padding: 10px 21px;
-  }
-}
-.form_submit_Btn_Label {
-  font-size: 16px;
-}
-@media only screen and (max-width: 767px) {
-  .form_submit_Btn_Label {
-    font-size: 12px;
-  }
-}
-.form #add-workDescription,
-.form #add-workExperience,
-.form #add-education,
-.form #add-qualifications {
-  color: #3b66db;
-  border: #3b66db 1px solid;
-  border-radius: 25px;
-  padding: 10px 20px;
-  margin: 20px auto;
-}
-@media only screen and (max-width: 767px) {
-  .form #add-workDescription,
-  .form #add-workExperience,
-  .form #add-education,
-  .form #add-qualifications {
-    padding: 10px 21px;
-  }
-}
-.form #add-workDescription_Label,
-.form #add-workExperience_Label,
-.form #add-education_Label,
-.form #add-qualifications_Label {
+header .header-left #cv_title {
   font-size: 12px;
+  font-weight: bold;
 }
-@media only screen and (max-width: 767px) {
-  .form #add-workDescription_Label,
-  .form #add-workExperience_Label,
-  .form #add-education_Label,
-  .form #add-qualifications_Label {
-    font-size: 9px;
-  }
-}
-.form_terms {
+header .header-left .contant {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
-.form_terms label {
-  color: #565656;
-  font-size: 16px;
-  gap: 10px;
-  font-family: "Inter";
+header .header-left .contant #cv_email,
+header .header-left .contant #cv_phone,
+header .header-left .contant #cv_website {
+  font-size: 10px;
+  font-weight: lighter;
 }
-@media only screen and (max-width: 767px) {
-  .form_terms label {
-    font-size: 9px;
-  }
+header .header-left .contant #cv_email img,
+header .header-left .contant #cv_phone img,
+header .header-left .contant #cv_website img {
+  width: 20px;
+  height: 20px;
 }
-@media only screen and (max-width: 767px) {
-  .form_terms label {
-    margin-top: 20px;
-  }
-}
-.form_check_input {
-  margin: 20px 0px;
-}
-.form_check_input label {
-  color: #565656;
-  font-size: 16px;
-  gap: 10px;
-  font-family: "Inter";
-}
-@media only screen and (max-width: 767px) {
-  .form_check_input label {
-    font-size: 9px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .form_check_input {
-    font-size: 9px;
-  }
-}
-input.error {
-  border: 1px solid red !important;
-  background-color: #f8d7da !important;
-  color: red !important;
-}
-#name-error,
-#email-error,
-#phone-error,
-#website-error,
-#workCompany-error,
-#workTask-error,
-#workDuration-error,
-#workDescription-error,
-#educationName-error,
-#educationLevel-error,
-#educationDate-error,
-#qualificationsName-error,
-#qualificationsCompany-error,
-#qualificationsDate-error,
-#skills-error {
-  color: red;
-  font-size: 16px;
-  margin-bottom: 10px;
+header .header-right {
+  font-size: 10px;
+  font-weight: lighter;
 }

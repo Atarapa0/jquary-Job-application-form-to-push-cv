@@ -903,29 +903,25 @@
   border-radius: 10px !important;
   color: #3b66db !important;
 }
-.form_workplace_type,
-.form_employment_type,
-.form_job_location {
+.form_skils,
+.form_tools {
   margin-bottom: 20px;
 }
-.form_workplace_type label,
-.form_employment_type label,
-.form_job_location label {
+.form_skils label,
+.form_tools label {
   color: #565656;
   font-size: 16px;
   gap: 10px;
   font-family: "Inter";
 }
 @media only screen and (max-width: 767px) {
-  .form_workplace_type label,
-  .form_employment_type label,
-  .form_job_location label {
+  .form_skils label,
+  .form_tools label {
     font-size: 9px;
   }
 }
-.form_workplace_type select,
-.form_employment_type select,
-.form_job_location select {
+.form_skils select,
+.form_tools select {
   width: 100%;
 }
 .select2-search .select2-search--inline {
@@ -954,7 +950,7 @@
 .custom-checkbox .checkmark {
   width: 20px;
   height: 20px;
-  border: 2px solid #8b54ff;
+  border: 2px solid #3b66db;
   border-radius: 4px;
   margin-right: 10px;
   display: flex;
@@ -971,8 +967,8 @@
   transition: opacity 0.3s ease;
 }
 .custom-checkbox .checkbox-input:checked + .checkmark {
-  background-color: #8b54ff;
-  border-color: #8b54ff;
+  background-color: #3b66db;
+  border-color: #3b66db;
 }
 .custom-checkbox .checkbox-input:checked + .checkmark .icon-checkmark {
   opacity: 1;
@@ -1001,6 +997,9 @@
   border-top: 1px solid #eee;
   margin: 10px 0;
 }
+form {
+  padding: 55px;
+}
 .form_title_company {
   display: flex;
   justify-content: space-between;
@@ -1019,8 +1018,17 @@
   }
 }
 .form_name label,
+.form_description label,
+.form_title label,
 .form_email label,
-.form_phone label {
+.form_phone label,
+.form_website label,
+.form_education label,
+.form_qualifications label,
+.form_workExperience label,
+.form_workDescription label,
+.form_work_experience label,
+.form_title label {
   color: #565656;
   font-size: 16px;
   gap: 10px;
@@ -1028,25 +1036,52 @@
 }
 @media only screen and (max-width: 767px) {
   .form_name label,
+  .form_description label,
+  .form_title label,
   .form_email label,
-  .form_phone label {
+  .form_phone label,
+  .form_website label,
+  .form_education label,
+  .form_qualifications label,
+  .form_workExperience label,
+  .form_workDescription label,
+  .form_work_experience label,
+  .form_title label {
     font-size: 9px;
   }
 }
 .form_name input,
+.form_description input,
+.form_title input,
 .form_email input,
-.form_phone input {
+.form_phone input,
+.form_website input,
+.form_education input,
+.form_qualifications input,
+.form_workExperience input,
+.form_workDescription input,
+.form_work_experience input,
+.form_title input {
   width: 100%;
   padding: 10px 23px;
-  border: 1px solid #8b54ff;
+  border: 1px solid #3b66db;
   border-radius: 25px;
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 20px;
 }
 .form_name input label,
+.form_description input label,
+.form_title input label,
 .form_email input label,
-.form_phone input label {
+.form_phone input label,
+.form_website input label,
+.form_education input label,
+.form_qualifications input label,
+.form_workExperience input label,
+.form_workDescription input label,
+.form_work_experience input label,
+.form_title input label {
   color: #565656;
   font-size: 16px;
   gap: 10px;
@@ -1054,43 +1089,69 @@
 }
 @media only screen and (max-width: 767px) {
   .form_name input label,
+  .form_description input label,
+  .form_title input label,
   .form_email input label,
-  .form_phone input label {
+  .form_phone input label,
+  .form_website input label,
+  .form_education input label,
+  .form_qualifications input label,
+  .form_workExperience input label,
+  .form_workDescription input label,
+  .form_work_experience input label,
+  .form_title input label {
     font-size: 9px;
   }
 }
-.form_workplace_type label,
-.form_employment_type label,
-.form_job_location label {
-  color: #565656;
-  font-size: 16px;
-  gap: 10px;
-  font-family: "Inter";
-}
-@media only screen and (max-width: 767px) {
-  .form_workplace_type label,
-  .form_employment_type label,
-  .form_job_location label {
-    font-size: 9px;
-  }
-}
-.form_submit .submit_Btn {
+.form_submit_Btn {
   color: #3b66db;
   border: #3b66db 1px solid;
   border-radius: 25px;
   padding: 20px 42px;
 }
 @media only screen and (max-width: 767px) {
-  .form_submit .submit_Btn {
+  .form_submit_Btn {
     padding: 10px 21px;
   }
 }
-.form_submit .submit_Btn_Label {
+.form_submit_Btn_Label {
   font-size: 16px;
 }
 @media only screen and (max-width: 767px) {
-  .form_submit .submit_Btn_Label {
+  .form_submit_Btn_Label {
     font-size: 12px;
+  }
+}
+.form #add-workDescription,
+.form #add-workExperience,
+.form #add-education,
+.form #add-qualifications {
+  color: #3b66db;
+  border: #3b66db 1px solid;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 20px auto;
+}
+@media only screen and (max-width: 767px) {
+  .form #add-workDescription,
+  .form #add-workExperience,
+  .form #add-education,
+  .form #add-qualifications {
+    padding: 10px 21px;
+  }
+}
+.form #add-workDescription_Label,
+.form #add-workExperience_Label,
+.form #add-education_Label,
+.form #add-qualifications_Label {
+  font-size: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .form #add-workDescription_Label,
+  .form #add-workExperience_Label,
+  .form #add-education_Label,
+  .form #add-qualifications_Label {
+    font-size: 9px;
   }
 }
 .form_terms {
@@ -1133,18 +1194,73 @@
     font-size: 9px;
   }
 }
+.form .cart {
+  background-color: #e6d3d380;
+  padding: 1rem;
+  border: 2px solid #535f6b;
+  border-radius: 0.25rem;
+  width: 18rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.form .cart_body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+.form .cart_body .img-fluid {
+  max-width: 25px;
+  height: 25px;
+}
+.form .work_experience_list,
+.form .education_list,
+.form .qualifications_list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 input.error {
   border: 1px solid red !important;
   background-color: #f8d7da !important;
   color: red !important;
 }
 #name-error,
+#title-error,
+#description-error,
 #email-error,
 #phone-error,
-#workplaceType-error,
-#employmentType-error,
-#jobLocation-error {
+#website-error,
+#workCompany-error,
+#workTask-error,
+#workDuration-error,
+#workDescription-error,
+#educationName-error,
+#educationLevel-error,
+#educationDate-error,
+#qualificationsName-error,
+#qualificationsCompany-error,
+#qualificationsDate-error,
+#skills-error,
+#tools-error {
   color: red;
   font-size: 16px;
   margin-bottom: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 40px !important;
+  background-color: #3C726E;
+  border-bottom: 1px solid #dee2e6;
+  color: #FFFFFF;
+}
+header .header-left {
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
