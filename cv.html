@@ -15,15 +15,25 @@
 
 <body>
     <div class="container">
+        <div class="row">
             <header class="header">
                 <div class="col-6">
                     <div class="header_left">
-                        <h1 id="cv_name" class="responsive" data-res="name">Name:</h1>
+                        <p id="cv_name" class="responsive" data-res="name">Name:</p>
                         <p id="cv_title" class="responsive" data-res="title">Title:</p>
-                        <div class="contant">
-                        <img src="assets/images/icons/Email.png" alt="Email" class="img"><p id="cv_email" class="responsive" data-res="email">Email:</p>
-                        <img src="assets/images/icons/phone.png" alt="Phone" class="img"><p id="cv_phone" class="responsive" data-res="phone">Phone:</p>
-                        <img src="assets/images/icons/Website.png" alt="Website" class="img"><p id="cv_website" class="responsive" data-res="website">Website:</p>                            
+                        <div class="content">
+                            <div class="content_email"> <img src="assets/images/icons/Email.png" alt="Email"
+                                    class="img">
+                                <p id="cv_email" class="responsive" data-res="email">Email:</p>
+                            </div>
+                            <div class="content_phone"> <img src="assets/images/icons/phone.png" alt="Phone"
+                                    class="img">
+                                <p id="cv_phone" class="responsive" data-res="phone">Phone:</p>
+                            </div>
+                            <div class="content_website"> <img src="assets/images/icons/Website.png" alt="Website"
+                                    class="img">
+                                <p id="cv_website" class="responsive" data-res="website">Website:</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -34,21 +44,50 @@
                     </p>
                 </div>
             </header>
-            <div class="main">
-                <div class="left_col col-md-6">
-                    <span>Work Experience:</span>
-                    <p id="cv_work_experience" class="responsive" data-res="workExperiences">Work Experience Details:
-                    </p>
-                </div>
-                <div class="left_col col-md-6">
-                    <p id="cv_education" class="responsive" data-res="educationList">Education:</p>
-                    <p id="cv_qualifications" class="responsive" data-res="qualifications">
-                        Qualifications:
-                    </p>
-                    <p id="cv_skills" class="responsive" data-res="skills">Skills:</p>
-                    <p id="cv_tools" class="responsive" data-res="tools">Tools:</p>
+        </div>
+        <div class="main">
+            <div class="left_col col-md-6">
+                <div class="work">
+                    <span class="border-start">Work Experience:</span>
+                    <div class="work_experiences">
+                    </div>
+                    
                 </div>
             </div>
+            <div class="right_col col-md-6">
+                <div class="education">
+                    <span class="border-start">Education:</span>
+                    <div class="education_list">
+                </div>
+                <div class="qualifications">
+                    <span class="border-start">Qualifications:</span>
+                    <div class="qualifications_list">
+                      <!--  <span id="qualification_name" class="responsive" data-res="name">UI Design Google</span>
+                        <span id="qualification_company" class="responsive" data-res="company">Google</span>
+                        <span id="qualification_date" class="responsive" data-res="date">2022</span>
+                    -->
+                    </div>
+                </div>
+                <div class="skills">
+                    <span class="border-start">Skills:</span>
+                    <div class="skills_list">
+                        <p class="responsive" data-res="skills" style="display: none;">Skills placeholder</p>
+                       <!-- <span id="skill_skills" class="responsive" data-res="skills">Skill 1</span>
+                        <span id="skill_skills" class="responsive" data-res="skills">Skill 2</span>
+                        <span id="skill_skills" class="responsive" data-res="skills">Skill 3</span>
+                    -->
+                    </div>
+                </div>
+                <div class="tools">
+                    <span class="border-start">Tools:</span>
+                    <div class="tools_list">
+                      <p  class="responsive" data-res="tools">Tools</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
 </body>
 
 </html>

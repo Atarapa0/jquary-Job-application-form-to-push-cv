@@ -1,13 +1,13 @@
 @import "../variable.less";
 
-header {
+.header {
   display: flex;
   justify-content: space-evenly;
   padding: 30px 40px !important;
   background-color: @cv_header_color;
   border-bottom: 1px solid #dee2e6;
   color: @cv_text_color;
-  .header-left {
+  &_left {
     font-size: 1.5rem;
     color: @cv_text_color;
     #cv_name {
@@ -18,22 +18,27 @@ header {
       font-size: @global_font_size;
       font-weight: bold;
     }
-    .contant {
-      display: flex;
-      #cv_email,
-      #cv_phone,
-      #cv_website {
+    .content {
+    
+      gap: 10px;
+      &_email,
+      &_phone,
+      &_website {
+        display: flex;
         font-size: 10px;
         font-weight: lighter;
-        img {
-        width: 20px;
-        height: 20px;
+  
+             img {
+        width: 16px;
+        height: 16px;
       }
+        font-size: 14px;
+        color: @cv_text_color;
       }
       
     }
   }
-  .header-right {
+  &_right {
     font-size: 10px;
     font-weight: lighter;
   }

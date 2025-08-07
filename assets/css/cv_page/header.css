@@ -880,7 +880,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
 }
-header {
+.header {
   display: flex;
   justify-content: space-evenly;
   padding: 30px 40px !important;
@@ -888,34 +888,37 @@ header {
   border-bottom: 1px solid #dee2e6;
   color: #FFFFFF;
 }
-header .header-left {
+.header_left {
   font-size: 1.5rem;
   color: #FFFFFF;
 }
-header .header-left #cv_name {
+.header_left #cv_name {
   font-size: 24px;
   font-weight: bold;
 }
-header .header-left #cv_title {
+.header_left #cv_title {
   font-size: 12px;
   font-weight: bold;
 }
-header .header-left .contant {
-  display: flex;
+.header_left .content {
+  gap: 10px;
 }
-header .header-left .contant #cv_email,
-header .header-left .contant #cv_phone,
-header .header-left .contant #cv_website {
+.header_left .content_email,
+.header_left .content_phone,
+.header_left .content_website {
+  display: flex;
   font-size: 10px;
   font-weight: lighter;
+  font-size: 14px;
+  color: #FFFFFF;
 }
-header .header-left .contant #cv_email img,
-header .header-left .contant #cv_phone img,
-header .header-left .contant #cv_website img {
-  width: 20px;
-  height: 20px;
+.header_left .content_email img,
+.header_left .content_phone img,
+.header_left .content_website img {
+  width: 16px;
+  height: 16px;
 }
-header .header-right {
+.header_right {
   font-size: 10px;
   font-weight: lighter;
 }

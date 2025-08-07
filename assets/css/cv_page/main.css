@@ -1,3 +1,11 @@
 .main {
   display: flex;
 }
+.main .left_col {
+  display: flex;
+  flex-direction: column;
+}
+.main .left_col .work_experience {
+  display: flex;
+  flex-direction: column;
+}
