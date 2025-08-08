@@ -17,7 +17,6 @@ $(document).ready(function () {
       if (data.hasOwnProperty(text)) {
         var res = data[text];
         if (typeof res === "string") {
-          console.log("1");
           // Eğer bu "skills" veya "tools" ise virgülden ayır
           if (text === "skills") {
             $(".skills_list").empty();
@@ -25,7 +24,7 @@ $(document).ready(function () {
             items.forEach(function (item) {
               addskills(item);
             });
-          } if (text === "tools") {
+          }else if (text === "tools") {
             $(".tools_list").empty();
             let items = res.split(",").map(e => e.trim());
             items.forEach(function (item) {
@@ -43,14 +42,13 @@ $(document).ready(function () {
           $(".work_experiences").empty();
           data.workExperiences.forEach(function (workExp) {
             addwork(workExp);
+            adddescription(workExp);
             // Descriptions ekle
             if (workExp.descriptions && Array.isArray(workExp.descriptions)) {
-              workExp.descriptions.forEach(function (desc) {
-                adddescription(desc);
-              });
+              
             }
           });
-        }
+        }""
 
         // Education List
         if (data.educationList && Array.isArray(data.educationList)) {
@@ -90,12 +88,20 @@ function addwork(value) {
 }
 
 function adddescription(value) {
+  let destval =``;
+  value.descriptions.forEach(function (desc) {
+           destval  +=`
+           <li class="responsive" data-res="description">${desc}</li>
+           `;     
+              })
+
+
   const descriptionItem = `
   <div class="work_experiences_description">
-  <ul><li class="responsive" data-res="description">${value}</li></ul>
+  <ul>${destval}</ul>
   </div>
   `;
-  $(".work_experiences").append(descriptionItem);
+  $(".work_experiences ").append(descriptionItem);
 }
 
 

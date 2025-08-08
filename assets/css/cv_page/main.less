@@ -8,6 +8,7 @@
     font-size: 20px;
     border-left: 3px solid #dee2e6 !important;
     padding-left: 6px;
+    display: block;
     @media @tablet {
       font-size: 16px !important;
     }
@@ -26,19 +27,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 10px;
-      .border-start {
-        font-weight: bold;
-        color: @title_color;
-        font-size: 20px;
-        margin-bottom: -10px !important;
-        @media @tablet {
-          font-size: 16px !important;
-        }
-        @media @mobile {
-          font-size: 11px !important;
-            
-        }
-      }
+      
       .work_experiences {
         &_detail {
           display: flex;
@@ -121,7 +110,7 @@
     margin-top: 30px;
     margin-right: 40px;
 
-    .education {
+    .education{
       &_list {
         .education_item {
           display: flex;

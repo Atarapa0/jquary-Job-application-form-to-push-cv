@@ -889,6 +889,7 @@
   font-size: 20px;
   border-left: 3px solid #dee2e6 !important;
   padding-left: 6px;
+  display: block;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main .border-start {
@@ -910,22 +911,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-}
-.main .left_col .work .border-start {
-  font-weight: bold;
-  color: #59BCB6;
-  font-size: 20px;
-  margin-bottom: -10px !important;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .main .left_col .work .border-start {
-    font-size: 16px !important;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .main .left_col .work .border-start {
-    font-size: 11px !important;
-  }
 }
 .main .left_col .work .work_experiences_detail {
   display: flex;

@@ -14,11 +14,9 @@
       font-weight: bold;
       @media @tablet {
         font-size: 22px;
-        
       }
       @media @mobile {
         font-size: 18px;
-          
       }
     }
     #cv_title {
@@ -26,39 +24,32 @@
       font-weight: bold;
       @media @tablet {
         font-size: 18px;
-        
       }
       @media @mobile {
         font-size: 12px;
-          
       }
     }
     .content {
+      display: flex;
       gap: 10px;
+      flex-direction: column;
       &_email,
       &_phone,
       &_website {
         display: flex;
         font-size: 16px;
         font-weight: lighter;
-        p {
-          margin-top: -6px !important;
-        }
+        gap: 5px;
+
         img {
           width: 16px;
           height: 16px;
         }
         @media @tablet {
           font-size: 12px;
-          p {
-          margin-top: -2px !important;
-        }
         }
         @media @mobile {
           font-size: 10px;
-          p {
-          margin-top: 0px !important;
-        }
         }
       }
     }

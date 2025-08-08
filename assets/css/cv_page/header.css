@@ -920,7 +920,9 @@
   }
 }
 .header_left .content {
+  display: flex;
   gap: 10px;
+  flex-direction: column;
 }
 .header_left .content_email,
 .header_left .content_phone,
@@ -928,11 +930,7 @@
   display: flex;
   font-size: 16px;
   font-weight: lighter;
-}
-.header_left .content_email p,
-.header_left .content_phone p,
-.header_left .content_website p {
-  margin-top: -6px !important;
+  gap: 5px;
 }
 .header_left .content_email img,
 .header_left .content_phone img,
@@ -946,22 +944,12 @@
   .header_left .content_website {
     font-size: 12px;
   }
-  .header_left .content_email p,
-  .header_left .content_phone p,
-  .header_left .content_website p {
-    margin-top: -2px !important;
-  }
 }
 @media only screen and (max-width: 767px) {
   .header_left .content_email,
   .header_left .content_phone,
   .header_left .content_website {
     font-size: 10px;
-  }
-  .header_left .content_email p,
-  .header_left .content_phone p,
-  .header_left .content_website p {
-    margin-top: 0px !important;
   }
 }
 .header_right {
