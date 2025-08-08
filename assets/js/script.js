@@ -136,6 +136,7 @@ $(document).ready(function () {
       success: function (response) {
         console.log("POST Response:", response);
         saveToLocalStorage(data);
+        window.location.href = 'cv.html';
         alert("Form başarıyla gönderildi! Network tab'ı kontrol edin.");
       },
       error: function (xhr, status, error) {
