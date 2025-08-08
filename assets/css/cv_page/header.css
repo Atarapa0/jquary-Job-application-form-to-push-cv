@@ -889,16 +889,35 @@
   color: #FFFFFF;
 }
 .header_left {
-  font-size: 1.5rem;
   color: #FFFFFF;
 }
 .header_left #cv_name {
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header_left #cv_name {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header_left #cv_name {
+    font-size: 18px;
+  }
+}
 .header_left #cv_title {
-  font-size: 12px;
+  font-size: 22px;
   font-weight: bold;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header_left #cv_title {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header_left #cv_title {
+    font-size: 12px;
+  }
 }
 .header_left .content {
   gap: 10px;
@@ -907,10 +926,13 @@
 .header_left .content_phone,
 .header_left .content_website {
   display: flex;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: lighter;
-  font-size: 14px;
-  color: #FFFFFF;
+}
+.header_left .content_email p,
+.header_left .content_phone p,
+.header_left .content_website p {
+  margin-top: -6px !important;
 }
 .header_left .content_email img,
 .header_left .content_phone img,
@@ -918,7 +940,42 @@
   width: 16px;
   height: 16px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header_left .content_email,
+  .header_left .content_phone,
+  .header_left .content_website {
+    font-size: 12px;
+  }
+  .header_left .content_email p,
+  .header_left .content_phone p,
+  .header_left .content_website p {
+    margin-top: -2px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header_left .content_email,
+  .header_left .content_phone,
+  .header_left .content_website {
+    font-size: 10px;
+  }
+  .header_left .content_email p,
+  .header_left .content_phone p,
+  .header_left .content_website p {
+    margin-top: 0px !important;
+  }
+}
 .header_right {
-  font-size: 10px;
+  font-size: 18px;
   font-weight: lighter;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header_right {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header_right {
+    font-size: 10px;
+  }
 }

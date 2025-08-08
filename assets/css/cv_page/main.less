@@ -1,14 +1,262 @@
+@import "../variable.less";
+
 .main {
   display: flex;
+  .border-start {
+    font-weight: bold;
+    color: @title_color;
+    font-size: 20px;
+    border-left: 3px solid #dee2e6 !important;
+    padding-left: 6px;
+    @media @tablet {
+      font-size: 16px !important;
+    }
+    @media @mobile {
+      font-size: 11px !important;
+        
+    }
+  }
 
-  .left_col{
+  .left_col {
     display: flex;
     flex-direction: column;
-  .work_experience {
+    margin-top: 30px;
+    margin-left: 40px;
+    .work {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      .border-start {
+        font-weight: bold;
+        color: @title_color;
+        font-size: 20px;
+        margin-bottom: -10px !important;
+        @media @tablet {
+          font-size: 16px !important;
+        }
+        @media @mobile {
+          font-size: 11px !important;
+            
+        }
+      }
+      .work_experiences {
+        &_detail {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          margin-top: 20px;
+          span[data-res="task"] {
+            font-weight: bold;
+            font-size: 16px;
+            @media @tablet {
+              font-size: 14px !important;
+            }
+            @media @mobile {
+              font-size: 10px !important;
+                
+            }
+          }
+          span[data-res="company"] {
+            font-size: 15px;
+            @media @tablet {
+              font-size: 13px !important;
+            }
+            @media @mobile {
+              font-size: 9px !important;
+                
+            }
+          }
+          span[data-res="duration"] {
+            font-size: 11px;
+            color: #666666;
+            @media @tablet {
+              font-size: 12px !important;
+            }
+            @media @mobile {
+              font-size: 8px !important;
+                
+            }
+          }
+        }
+        &_description {
+          display: flex;
+          flex-direction: column;
+          ul {
+            margin: 0;
+            padding-left: 35px;
+            @media @tablet {
+              padding-left: 30px !important;
+                
+            }
+            @media @mobile {
+              padding-left: 20px !important;
+                
+            }
+
+            li[data-res="description"] {
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+              @media @tablet {
+                font-size: 13px !important;
+                margin: 0;
+              padding: 0;
+              }
+              @media @mobile {
+              font-size: 9px !important;
+              margin: 0;
+              padding: 0;
+                
+            }
+            }
+          }
+        }
+      }
+    }
+  }
+  .right_col {
     display: flex;
     flex-direction: column;
-  }
-  }
+    margin-top: 30px;
+    margin-right: 40px;
 
-
+    .education {
+      &_list {
+        .education_item {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          gap: 4px;
+          span[data-res="name"] {
+            font-weight: bold;
+            font-size: 16px;
+            @media @tablet {
+              font-size: 14px !important;
+            }
+            @media @mobile {
+              font-size: 10px !important;
+                
+            }
+          }
+          span[data-res="level"] {
+            font-size: 15px;
+            @media @tablet {
+              font-size: 13px !important;
+            }
+            @media @mobile {
+              font-size: 9px !important;
+                
+            }
+          }
+          span[data-res="date"] {
+            font-size: 11px;
+            color: #666666;
+            @media @tablet {
+              font-size: 12px !important;
+            }
+            @media @mobile {
+              font-size: 8px !important;
+                
+            }
+          }
+        }
+      }
+    }
+    .qualifications {
+      &_list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        gap: 4px;
+        span[data-res="name"] {
+          font-weight: bold;
+          font-size: 16px;
+          @media @tablet {
+            font-size: 14px !important;
+          }
+          @media @mobile {
+              font-size: 10px !important;
+                
+            }
+        }
+        span[data-res="company"] {
+          font-size: 15px;
+          @media @tablet {
+            font-size: 13px !important;
+          }
+          @media @mobile {
+              font-size: 9px !important;
+                
+            }
+        }
+        span[data-res="date"] {
+          font-size: 11px;
+          color: #666666;
+          @media @tablet {
+            font-size: 12px !important;
+          }
+          @media @mobile {
+              font-size: 8px !important;
+                
+            }
+        }
+      }
+    }
+    .skills {
+      &_list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        ul {
+          margin: 0;
+          padding-left: 20px;
+          @media @tablet {
+            padding-left: 25px !important;
+          }
+          li[data-res="skills"] {
+            font-size: 14px !important;
+            margin: 0;
+            padding: 0;
+            @media @tablet {
+              font-size: 12px !important;
+            }
+            @media @mobile {
+              font-size: 8px !important;
+            }
+          }
+        }
+      }
+      
+    }
+    .tools {
+        &_list {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          ul {
+            margin: 0;
+            padding-left: 20px;
+            @media @tablet {
+              padding-left: 25px !important;
+            }
+            li[data-res="name"] {
+              font-size: 14px !important;
+            margin: 0;
+            padding: 0;
+            @media @tablet {
+              font-size: 12px !important;
+            }
+            @media @mobile {
+              font-size: 8px !important;
+            }
+            }
+          }
+        }
+      }
+  }
 }

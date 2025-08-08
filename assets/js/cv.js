@@ -80,11 +80,11 @@ function addwork(value) {
   const company = value.company || "";
   const duration = value.duration || "";
   const workItem = `
-  <div class="work_experiences_dertail">
-         <p  class="responsive" data-res="task">${task}</p>
-         <p  class="responsive" data-res="company">${company}</p>
-         <p  class="responsive" data-res="duration">${duration}</p>
-                        `;
+  <div class="work_experiences_detail">
+         <span  class="responsive" data-res="task">${task}</span>
+         <span  class="responsive" data-res="company">${company}</span>
+         <span  class="responsive" data-res="duration">${duration}</span>
+           `;
   $(".work_experiences").append(workItem);
 
 }
@@ -92,7 +92,7 @@ function addwork(value) {
 function adddescription(value) {
   const descriptionItem = `
   <div class="work_experiences_description">
-  <p  class="responsive" data-res="description">${value}</p>
+  <ul><li class="responsive" data-res="description">${value}</li></ul>
   </div>
   `;
   $(".work_experiences").append(descriptionItem);
@@ -102,31 +102,32 @@ function adddescription(value) {
 
 function addeducation(value) {
   const educationItem = `
-  <p  class="responsive" data-res="name">${value.name}</p>
-  <p  class="responsive" data-res="level">${value.level}</p>
-  <p  class="responsive" data-res="date">${value.date}</p>
+  <div class="education_item">
+  <span  class="responsive" data-res="name">${value.name}</span>
+  <span  class="responsive" data-res="level">${value.level}</span>
+  <span  class="responsive" data-res="date">${value.date}</span>
+  </div>
   `;
   $(".education_list").append(educationItem);
 }
 
 function addqualification(value) {
   const qualificationItem = `
-  <p  class="responsive" data-res="name">${value.name}</p>
-  <p  class="responsive" data-res="company">${value.company}</p>
-  <p  class="responsive" data-res="date">${value.date}</p>
+  <span  class="responsive" data-res="name">${value.name}</span>
+  <span  class="responsive" data-res="company">${value.company}</span>
+  <span  class="responsive" data-res="date">${value.date}</span>
   `;
   $(".qualifications_list").append(qualificationItem);
 }
 
 function addskills(value) {
-  const skillsItem = ` <p class="responsive" data-res="skills">${value}</p>
-                       
+  const skillsItem = ` <ul><li class="responsive" data-res="skills">${value}</li></ul>
                 `;
   $(".skills_list").append(skillsItem);
 }
 
 function addtools(value) {
-  const toolsItem = ` <p class="responsive" data-res="name">${value}</p>
+  const toolsItem = ` <ul><li class="responsive" data-res="name">${value}</li></ul>
                 `;
                 console.log("toolsItem: " + toolsItem);
   $(".tools_list").append(toolsItem);
