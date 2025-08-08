@@ -18,15 +18,18 @@ The CV template has been carefully adapted from this Figma design and transforme
 ## 📸 Screenshots
 
 ### 📋 Job Application Form
-![Job Application Form - Desktop](image-1.png)
-*Professional job application form with real-time validation*
+![Form Demo](assets/images/form_1.png)
+![Form Demo](assets/images/form_2.png)
+*Interactive job application form with validation and Select2 dropdowns*
 
-### 📄 Generated CV Layout
-![Generated CV - Desktop View](image.png)
-*Professional CV generated from form data - Desktop layout*
+### 📄 Professional CV Output
+![CV Demo - Full Layout](assets/images/cv_tablet.png)
 
-![Generated CV - Mobile View](image-2.png)
-*Responsive CV layout optimized for mobile devices*
+*Complete CV layout with all sections populated from form data*
+
+![CV Demo - Mobile Responsive](assets/images/cv_mobile.png)
+
+*Mobile-optimized CV layout showing responsive design adaptation*
 
 ## 🌟 Features
 
@@ -70,16 +73,19 @@ The CV template has been carefully adapted from this Figma design and transforme
 ## 🚀 Demo
 
 ### 📋 Job Application Form Interface
-![Form Demo](assets\images\form_1.png)
-![Form Demo](assets\images\form_2.png)
+![Form Demo](assets/images/form_1.png)
+![Form Demo](assets/images/form_2.png)
 *Interactive job application form with validation and Select2 dropdowns*
 
 ### 📄 Professional CV Output
-![CV Demo - Full Layout](assets\images\cv_tablet.png)
+![CV Demo - Full Layout](assets/images/cv_tablet.png)
+
 *Complete CV layout with all sections populated from form data*
 
-![CV Demo - Mobile Responsive](assets\images\cv_mobile.png)
+![CV Demo - Mobile Responsive](assets/images/cv_mobile.png)
+
 *Mobile-optimized CV layout showing responsive design adaptation*
+
 
 ### 📋 Application Form Features
 The form collects comprehensive information:
